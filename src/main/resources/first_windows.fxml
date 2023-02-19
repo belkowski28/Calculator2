@@ -48,7 +48,7 @@
                            <font>
                               <Font size="18.0" />
                            </font></Label>
-                        <TextField fx:id="regranulate_tape">
+                        <TextField fx:id="regranulate_tape_set">
                            <font>
                               <Font size="18.0" />
                            </font></TextField>
@@ -76,7 +76,7 @@
                            <font>
                               <Font size="18.0" />
                            </font></Button>
-                        <Button mnemonicParsing="false" onAction="#clear_tape" prefHeight="26.0" prefWidth="160.0" text="Wyczyśc">
+                        <Button mnemonicParsing="false" onAction="#clear_tape" prefHeight="26.0" prefWidth="160.0" text="Wyczyść">
                            <font>
                               <Font size="18.0" />
                            </font></Button>
@@ -155,11 +155,13 @@
                         <Label prefHeight="18.0" prefWidth="195.0" text="Średnica uszczelki:">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <TextField fx:id="diameter_liner">
                            <font>
                               <Font size="18.0" />
-                           </font></TextField>
+                           </font>
+                        </TextField>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="320.0">
@@ -167,11 +169,13 @@
                         <Label prefHeight="18.0" prefWidth="195.0" text="Grubość uszczelki:">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <TextField fx:id="thickness_liners">
                            <font>
                               <Font size="18.0" />
-                           </font></TextField>
+                           </font>
+                        </TextField>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="320.0">
@@ -179,11 +183,13 @@
                         <Label prefHeight="18.0" prefWidth="195.0" text="Gęstość uszczelki:">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <TextField fx:id="density_liners">
                            <font>
                               <Font size="18.0" />
-                           </font></TextField>
+                           </font>
+                        </TextField>
                      </children>
                   </HBox>
                   <HBox alignment="TOP_CENTER" prefHeight="18.0" prefWidth="320.0" spacing="10.0">
@@ -199,7 +205,8 @@
                         <RadioButton fx:id="saranex_liners" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Saranex" toggleGroup="$rodzaj_uszczelki">
                            <font>
                               <Font size="18.0" />
-                           </font></RadioButton>
+                           </font>
+                        </RadioButton>
                         <RadioButton fx:id="evoh_liners" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="EVOH" toggleGroup="$rodzaj_uszczelki">
                            <font>
                               <Font size="18.0" />
@@ -217,11 +224,13 @@
                         <Button mnemonicParsing="false" onAction="#calculate_liners" prefHeight="26.0" prefWidth="160.0" text="Oblicz">
                            <font>
                               <Font size="18.0" />
-                           </font></Button>
-                        <Button mnemonicParsing="false" onAction="#clear_liners" prefHeight="26.0" prefWidth="160.0" text="Wyczyśc">
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#clear_liners" prefHeight="26.0" prefWidth="160.0" text="Wyczyść">
                            <font>
                               <Font size="18.0" />
-                           </font></Button>
+                           </font>
+                        </Button>
                      </children>
                   </HBox>
                   <Separator prefWidth="200.0" />
@@ -230,11 +239,13 @@
                         <Label prefHeight="25.0" prefWidth="260.0" text="Rolka (mb)">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <Label fx:id="roller_liners" prefHeight="18.0" text="Label">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="139.0" prefHeight="22.0" prefWidth="320.0">
@@ -242,11 +253,13 @@
                         <Label prefHeight="18.0" prefWidth="260.0" text="Folia (kilogram)">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <Label fx:id="foil_liners" prefHeight="18.0" text="Label">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="161.0" prefHeight="22.0" prefWidth="320.0">
@@ -254,11 +267,13 @@
                         <Label prefHeight="18.0" prefWidth="260.0" text="Waga 10 szt">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <Label fx:id="weight_liners" prefHeight="18.0" text="Label">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="161.0" prefHeight="22.0">
@@ -266,11 +281,13 @@
                         <Label prefHeight="18.0" prefWidth="260.0" text="Wycinanie [min/1000 kszt]">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                         <Label fx:id="cutting_liners" prefHeight="18.0" text="Label">
                            <font>
                               <Font size="18.0" />
-                           </font></Label>
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="205.0" prefHeight="22.0" />

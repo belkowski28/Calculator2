@@ -1,5 +1,6 @@
 package com.example.calculator.controller;
 
+import com.example.calculator.model.CsvReader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -53,6 +54,9 @@ public class MainController {
 
     @FXML
     private Label regranulate_tape;
+
+    @FXML
+    private TextField regranulate_tape_set;
 
     @FXML
     private ToggleGroup rodzaj_pianki;
