@@ -1,6 +1,7 @@
 package com.example.calculator.controller;
 
 import com.example.calculator.model.CsvReader;
+import com.example.calculator.model.Stamp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -78,6 +79,14 @@ public class MainController {
 
     @FXML
     private Label weight_liners;
+    @FXML
+    public void initialize(){
+        CsvReader reader = new CsvReader();
+        for(Stamp stamp : reader.getStamp()){
+            System.out.println(stamp.toString());
+        }
+
+    }
 
     @FXML
     void calculate_liners(ActionEvent event) {

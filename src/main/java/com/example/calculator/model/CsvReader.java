@@ -1,7 +1,6 @@
 package com.example.calculator.model;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ public class CsvReader {
 
     BufferedReader reader = null;
     String line ="";
-    private ArrayList <Plate> plate = new ArrayList<>();
+    private ArrayList <Stamp> stamp = new ArrayList<>();
 
     String file = "src/main/resources/CSV/płyta.csv";
 
@@ -20,7 +19,7 @@ public class CsvReader {
             reader = new BufferedReader(new FileReader(file));
             while((line = reader.readLine())!=null){
                 String [] row = line.split(",");
-                plate.add(new Plate(Double.parseDouble(row[0]), Double.parseDouble(row[1]),
+                stamp.add(new Stamp(Double.parseDouble(row[0]), Double.parseDouble(row[1]),
                         Double.parseDouble(row[2]), Double.parseDouble(row[3]), Double.parseDouble(row[4])));
             }
         } catch (Exception exception) {
@@ -36,7 +35,7 @@ public class CsvReader {
 
     }
 
-    public ArrayList<Plate> getPlate() {
-        return plate;
+    public ArrayList<Stamp> getStamp() {
+        return stamp;
     }
 }
